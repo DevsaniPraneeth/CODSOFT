@@ -12,14 +12,11 @@ public class NumberGuessingGame {
         int score = 0;
 
         System.out.println("Welcome to the Number Guessing Game!");
-
-        // Game loop for multiple rounds
         while (true) {
             int targetNumber = random.nextInt(upperBound - lowerBound + 1) + lowerBound;
             System.out.println("\nI've generated a number between " + lowerBound + " and " + upperBound + ".");
             System.out.println("You have " + maxAttempts + " attempts to guess the number.");
 
-            // Round loop
             for (int attempt = 1; attempt <= maxAttempts; attempt++) {
                 System.out.print("Attempt " + attempt + ": Enter your guess: ");
                 int userGuess = scanner.nextInt();
